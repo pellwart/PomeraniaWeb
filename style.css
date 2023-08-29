@@ -1,0 +1,341 @@
+/* Layout */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    background-image: url(images/forest.jpeg);
+    background-size: cover;
+    min-height: 50vh;
+}
+
+#activitesContainer {
+    display: flex;
+    padding-top: 1.25rem;
+    justify-content: space-around;
+}
+
+#activitesContainer img {
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+}
+
+#activtiesSection {
+    background-color:#F1FAEE ;
+    padding: 3.25rem 0;
+}
+
+#guideContainer {
+    max-width: 40%;
+    background-color: #A8DADC;
+    margin: 6.25rem auto;
+    border-radius: 15px;
+    padding: 2em 2em 2em 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(29, 53, 87, 1);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(29, 53, 87, 1);
+    box-shadow: 0px 5px 0px 0px rgba(29, 53, 87, 1);
+}
+
+.col2 {
+    width: 40%;
+    padding: 10px 0 10px 10px;
+}
+
+.col1 {
+    width: 60%;
+    padding: 10px 5px 10px 5px;  
+}
+
+.col2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.ti-map-pin {
+    display: none;
+  }
+  
+  .activityBox {
+      min-width: 200px;
+      max-width: 250px;
+  }
+
+  #pomeraniaHeading:after {
+    content: '';
+    background-color: #F05A56;
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+  /* Text and fonts */
+
+h1,h2,h3,h4 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Lora', serif;
+    overflow-wrap: break-word;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+}
+
+h1 {
+    display: inline-block;
+    background-color:#1D3557;
+    color: #fff;
+    min-width: 350px;
+    max-width: 490px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 7px;
+    margin-top: 15vh;
+    position: relative;
+    font-size: 2rem;
+}
+
+h2 {
+    background-color:#A8DADC;
+    color: #fff;
+    margin: 0 auto;
+    min-width: 250px;
+    max-width: 490px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 2.5vh;
+    font-size: 1.12rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #1D3557;
+}
+
+h4 {
+    color: #1D3557;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.col1 p {
+    line-height: 1.2em;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+    header {
+        min-height: 45vh;
+        background-size: 195%;
+    }
+
+    body {
+      margin: 0.5rem;
+      background-color: #A8DADC;
+    }
+
+    #activitesContainer {
+        padding-top: 1.25rem;
+        justify-content: space-around;
+        flex-direction: column;  
+    }
+
+    h1 {
+        min-width: 250px;
+    }
+
+    h2 {
+        background-color:#A8DADC;
+        color: #fff;
+        margin: 0 auto;
+        min-width: 150px;
+        max-width: 490px;
+        border-radius: unset;
+        padding: 10px 5px 10px 5x;;
+        margin-top: 2.5vh;
+        font-size: 1.12rem;
+    }
+
+    h3 {
+        padding: 0 15px 0 15px;
+    }
+
+    .activityBox {
+        max-width: 100%;
+    }
+
+    #guideContainer {
+        max-width: unset;
+        background-color: #A8DADC;
+        margin-top: 0.62em;
+        margin-bottom:0.62em;
+        padding: 0px;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 5x;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+    }
+
+    .col2 {
+        width: 100%;
+        padding: unset;
+    }
+    
+    .col1 {
+        margin-top: 0.62rem;
+        width: 100%;
+        padding: unset; 
+    }
+
+    .col2 img {
+        height: 100%;
+        width: 100%;
+        border-radius: unset;
+        object-fit: cover;
+    }
+}
+/* Small and medium devices (portrait tablets and larger phones, 600px and up ti 768px)*/
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    header {
+        min-height: 45vh;
+        background-size: 148%;
+    }
+
+    body {
+        margin: 0.5rem;
+        background-color: #A8DADC;
+      }
+  
+      #activitesContainer {
+          padding-top: 1.25rem;
+          justify-content: unset;
+          flex-direction: row;  
+          flex-wrap: wrap;
+          margin: 0 0.63em;
+      }
+      
+      .activityBox {
+        flex-grow:1;
+        max-width: 50%;
+    }
+
+    .activityBox-2 p,
+    .activityBox-1 p {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+ 
+    .activityBox-3 {
+        flex-grow: 2;
+        max-width: unset;
+    }
+
+    #activitesContainer div:nth-child(3) {
+        margin-top: 1.25em;
+        flex-basis: 100%;
+    }
+
+    #guideContainer {
+        max-width: unset;
+        background-color: #A8DADC;
+        margin-top: 0.62rem;
+        margin-bottom: 0.62rem;
+        padding: 0px;
+        flex-direction: row;
+        flex-direction: row-reverse;
+        gap: 5x;
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+    }
+
+    .col2 {
+        width: 50%;
+        padding: unset;
+    }
+    
+    .col1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;     
+        gap: 5px;
+    }
+
+     .ti-map-pin {
+        display: unset;
+        font-size: 2.5em;
+        position: relative;
+        color:#1D3557;
+    }
+
+    .col1 h3 {
+        margin-bottom: 0;
+    }
+   
+    .col2 img {
+        height: 100%;
+        width: 100%;
+        border-radius: unset;
+        object-fit: cover;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
+    header {
+        min-height: 45vh;
+        background-size: 118%;
+    }
+
+    .col1 {
+        position: relative;
+    }
+   
+    .ti-map-pin {
+        display: unset;
+        font-size: 19.5em;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        color:#1D3557;
+        opacity: 0.09;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+/* Extra Large devices (large laptops/desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {
+   
+    .col1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;     
+        gap: 5px;
+    }
+}
